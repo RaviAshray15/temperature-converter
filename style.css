@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Sora:wght@100..800&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+
+        :root{
+            --black: #1e1e1e;
+            --yellow: #FFF2AF;
+        }
+        body{
+            margin: 0;
+            padding: 0;
+            background-color: var(--black);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: Outfit, sans-serif;    
+            flex-direction: column;
+        }
+
+        .container{
+            background-color: var(--black);
+            width: 500px;
+            height: 500px;
+            border-radius: 40px;
+            box-shadow: 10px 10px 20px #fff2af93;
+            transition: all 1s ease;
+        }
+
+        .container:hover{
+            *{
+                color: aqua;
+            }
+            transform: scale(1.01);
+            box-shadow: 10px 10px 20px rgba(0, 255, 255, 0.753);
+            
+            input{
+                color: black;
+            }
+        }
+
+        .container:hover ~ footer h1 {
+            color: aqua;
+        }
+        
+        .container p{
+            display: flex;
+            justify-content: center;
+            font-weight: 500;
+            font-size: 30px;
+            color: var(--yellow);
+        }
+
+        label{
+            font-size: 17px;
+        }
+
+        .input-box{
+            color: var(--yellow);
+            display: flex;
+            flex-direction: column;
+            margin: 35px 0;
+            padding: 10px 40px;
+        }
+
+        input{
+            margin-top: 15px;
+            background-color: white;
+            border-radius: 10px;
+            height: 30px;
+            font-size: 20px;
+            font-family: Outfit, sans-serif;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            color: var(--yellow);
+        }
+
+        footer h1 {
+            font-size: 18px;
+            font-weight: 400;
+        }
