@@ -8,6 +8,7 @@ function convertFromCelsius() {
     document.getElementById("kelvin").value = (celsius + 273.15).toFixed(2);
 }
 
+
 function convertFromFahrenheit() {
     let fahrenheit = parseFloat(document.getElementById("fahrenheit").value);
     if (isNaN(fahrenheit)) {
